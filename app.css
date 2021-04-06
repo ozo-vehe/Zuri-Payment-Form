@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  --text-color: #575757;
+  --border-color: #aeaeae;
+  --bg-color: #fafafa;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: 'Lato';
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+.wrapper {
+  text-align: center;
+  padding: 0px;
+}
+.wrapper h2 {
+  font-size: 32px;
+}
+
+.wrapper form {
+  width: 400px;
+  margin: 0px auto;
+  transition: all .3s;
+}
+.wrapper form:hover {
+  box-shadow: 0px 0px 2px var(--border-color);
+}
+.wrapper form h4 {
+  font-size: 16px;
+  margin: 5px 0px;
+  font-weight: 100;
+  display: inline-block;
+}
+.wrapper form > h4 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.input-group {
+  font-family: 'Lato';
+  width: 350px;
+  margin: 5px auto;
+  text-align: left;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box > i {
+  color: var(--border-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12%;
+}
+
+label i {
+  text-transform: capitalize;
+}
+
+.input-group .name,
+.input-box .dob,
+input[type='tel']
+{
+  height: 35px;
+  width: 90%;
+  margin: 5px 0px;
+  border-radius: 5px;
+  background: none;
+  padding-left: 5px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  border: thin solid var(--border-color);
+}
+
+.input-box .dob {
+  display: inline-block;
+  width: 50px;
+  margin: 5px;
+}
+.input-box .dob:nth-child(2) {
+  margin-left: 20px;
+}
+
+#bc1, #b1 {
+  margin-left: 10px;
+}
+
+.input-box select {
+  border: thin solid var(--border-color);
+  width: 70px;
+  height: 35px;
+  margin: 10px 5px 0px 0px;
+  border-radius: 5px;
+  padding-left: 2px;
+  font-family: 'Lato';
+  color: var(--text-color);
+  background: none;
+}
+
+button {
+  background-color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Lato';
+  padding: 12px 30px;
+  margin: 20px 0px 15px 0px;
+  color: var(--bg-color);
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: all .3s;
+}
+button:hover {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  box-shadow: 0px 0px 5px var(--border-color);
+}
+button:active {
+  box-shadow: 0px 0px 0px var(--border-color);
+}
